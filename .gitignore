@@ -12,6 +12,12 @@
 !.prettierrc
 !.prettierignore
 !.tx
+!.env
+!.env.development
+!.env.production
+!.nvmrc
+schema.graphql
+
 dist
 node_modules
 src/locales/_build

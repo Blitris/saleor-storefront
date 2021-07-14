@@ -1,4 +1,5 @@
 import { GetShop_shop_countries } from "@saleor/sdk/lib/queries/gqlTypes/GetShop";
+
 import { IAddress, IAddressWithAddressType, IFormError } from "@types";
 
 export declare type Address = {
@@ -8,7 +9,8 @@ export declare type Address = {
 
 export interface IProps {
   userAddresses?: Address[] | null;
-  selectedUserAddressId?: string;
+  selectedUserShippingAddressId?: string;
+  selectedUserBillingAddressId?: string;
   checkoutShippingAddress?: IAddress | null;
   billingAsShippingAddress?: boolean;
   checkoutBillingAddress?: IAddress | null;
